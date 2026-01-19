@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K,YAMANAKA Portfolio</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400&family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">K,YAMANAKA Portfolio</div>
+      <button class="menu-toggle" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <a href="#works">Works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="brand">K,YAMANAKA Portfolio</div>
+      <button class="drawer-close" aria-label="メニューを閉じる">×</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#works">Works</a>
+      <a href="#about">About me</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" aria-hidden="true"></div>
+
+  <main>
+    <section class="kv">
+      <div class="kv-slider" aria-label="KV slider">
+        <div class="kv-track">
+          <ul class="kv-list">
+            <li class="kv-slide"><img src="assets/kv/kv1.jpg" alt="KV 1"></li>
+            <li class="kv-slide"><img src="assets/kv/kv2.png" alt="KV 2"></li>
+            <li class="kv-slide"><img src="assets/kv/kv3.jpg" alt="KV 3"></li>
+            <li class="kv-slide"><img src="assets/kv/kv4.jpg" alt="KV 4"></li>
+            <li class="kv-slide"><img src="assets/kv/kv5.jpg" alt="KV 5"></li>
+            <li class="kv-slide"><img src="assets/kv/kv6.jpg" alt="KV 6"></li>
+            <li class="kv-slide"><img src="assets/kv/kv7.jpg" alt="KV 7"></li>
+          </ul>
+        </div>
+        <div class="kv-dots" aria-label="KV pagination"></div>
+      </div>
+    </section>
+
+    <section id="works" class="works">
+      <h2 class="section-title">Works</h2>
+      <div class="works-grid">
+        <article class="work-card" data-modal-target="station">
+          <div class="thumb thumb-single">
+            <img src="assets/works/grid/works-01.jpg" alt="駅広告内容デザイン">
+          </div>
+          <p class="caption">駅広告内容デザイン</p>
+        </article>
+        <article class="work-card" data-modal-target="magazine">
+          <div class="thumb thumb-single">
+            <img src="assets/works/grid/works-02.jpg" alt="雑誌広告デザイン">
+          </div>
+          <p class="caption">雑誌広告デザイン</p>
+        </article>
+        <article class="work-card" data-modal-target="digitalcard">
+          <div class="thumb thumb-single">
+            <img src="assets/works/grid/works-03.jpg" alt="デジタルカードデザイン">
+          </div>
+          <p class="caption">デジタルカードデザイン</p>
+        </article>
+        <article class="work-card" data-modal-target="poster">
+          <div class="thumb thumb-single">
+            <img src="assets/works/grid/works-04.jpg" alt="イベントポスターデザイン">
+          </div>
+          <p class="caption">イベントポスターデザイン</p>
+        </article>
+        <article class="work-card" data-modal-target="sns">
+          <div class="thumb thumb-single">
+            <img src="assets/works/grid/works-05.jpg" alt="SNS広告">
+          </div>
+          <p class="caption">SNS広告</p>
+        </article>
+        <article class="work-card" data-modal-target="goods">
+          <div class="thumb thumb-single">
+            <img src="assets/works/grid/works-06.jpg" alt="イベントグッズデザイン">
+          </div>
+          <p class="caption">イベントグッズデザイン</p>
+        </article>
+        <article class="work-card" data-modal-target="hp">
+          <div class="thumb thumb-single">
+            <img src="assets/works/grid/works-07.jpg" alt="HP用広告画像">
+          </div>
+          <p class="caption">HP用広告画像</p>
+        </article>
+        <article class="work-card" data-modal-target="movie">
+          <div class="thumb thumb-single">
+            <img src="assets/works/grid/works-08.jpg" alt="動画制作">
+          </div>
+          <p class="caption">動画制作</p>
+        </article>
+        <article class="work-card" data-modal-target="web">
+          <div class="thumb thumb-single">
+            <img src="assets/works/grid/works-09.jpg" alt="Webデザイン">
+          </div>
+          <p class="caption">Webデザイン</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About me</h2>
+      <div class="about-content">
+        <p class="about-text">
+          長年OLとして勤めた後、2023年より本格的にデザインの勉強を始めました。<br>
+          仮想通貨のデジタルカードデザイン、駅構内展示の看板デザインを始め、約60店舗を日本国内に展開する企業にてDTPデザイン・広告デザインを担当しました。<br>
+          現在はデザインと共にWeb制作・AI活用を行いながら、飲食店でのイベント企画・Googleコンサルなども行っています。<br><br>
+          【主な使用ツール】<br>
+          Canva, Figma, Adobe Photoshop, Adobe Illustrator<br>
+          Adobe Premiere Pro, Adobe After Effects, ComfyUI
+        </p>
+        <div class="about-visual">
+          <div class="circle circle-front">
+            <img src="assets/icons/myphoto.jpg" alt="プロフィール写真">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal: Station -->
+  <div class="modal" id="modal-station" aria-hidden="true" role="dialog" aria-label="駅看板デザインの詳細">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="閉じる">×</button>
+      <div class="modal-body">
+        <h3 class="modal-title">駅看板デザイン</h3>
+        <p class="modal-sub">制作概要：都内駅構内に掲載する大型看板デザイン</p>
+        <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
+        <div class="modal-images modal-images-station">
+          <img src="assets/works/station/station_1-1.jpg" alt="駅看板デザイン 1">
+          <img src="assets/works/station/station_1-2.jpg" alt="駅看板デザイン 2">
+          <p class="modal-caption">掲載場所：新宿駅</p>
+          <div class="modal-spacer"></div>
+          <img src="assets/works/station/station_2-1.png" alt="駅看板デザイン 3">
+          <img src="assets/works/station/station_2-2.png" alt="駅看板デザイン 4">
+          <p class="modal-caption">掲載場所：新宿駅</p>
+          <div class="modal-spacer"></div>
+          <img src="assets/works/station/station_3.png" alt="駅看板デザイン 5">
+          <p class="modal-caption">掲載場所：渋谷駅</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Magazine -->
+  <div class="modal" id="modal-magazine" aria-hidden="true" role="dialog" aria-label="雑誌広告デザインの詳細">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="閉じる">×</button>
+      <div class="modal-body">
+        <h3 class="modal-title">雑誌広告デザイン</h3>
+        <p class="modal-sub">制作概要：雑誌に掲載の広告ページのデザイン</p>
+        <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
+        <div class="modal-images modal-images-magazine">
+          <img src="assets/works/magazine/mappuru_data.png" alt="雑誌広告デザイン">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Digital Card -->
+  <div class="modal" id="modal-digitalcard" aria-hidden="true" role="dialog" aria-label="デジタルカードデザインの詳細">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="閉じる">×</button>
+      <div class="modal-body">
+        <h3 class="modal-title">デジタルカードデザイン</h3>
+        <p class="modal-sub">制作概要：仮想通貨用のデジタルカード</p>
+        <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
+        <div class="modal-images modal-images-digital">
+          <img src="assets/works/digital-card/digital_card1.jpg" alt="デジタルカードデザイン 1">
+          <img src="assets/works/digital-card/digital_card2.jpg" alt="デジタルカードデザイン 2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Poster -->
+  <div class="modal" id="modal-poster" aria-hidden="true" role="dialog" aria-label="イベントポスターデザインの詳細">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="閉じる">×</button>
+      <div class="modal-body">
+        <h3 class="modal-title">イベントポスターデザイン</h3>
+        <p class="modal-sub">制作概要：Youtuberや飲食店のイベント用ポスターのデザイン</p>
+        <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
+        <div class="modal-images modal-images-poster">
+          <img src="assets/works/poster/event_poster.jpg" alt="イベントポスターデザイン 1">
+          <img src="assets/works/poster/event_menu.jpg" alt="イベントポスターデザイン 2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: SNS -->
+  <div class="modal" id="modal-sns" aria-hidden="true" role="dialog" aria-label="SNS広告の詳細">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="閉じる">×</button>
+      <div class="modal-body">
+        <h3 class="modal-title">SNS広告</h3>
+        <p class="modal-sub">制作概要：Instagram、XなどのSNS用の広告デザイン</p>
+        <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
+        <div class="modal-images modal-images-sns">
+          <img src="assets/works/sns/SNS_1-1.jpg" alt="SNS広告 1">
+          <img src="assets/works/sns/SNS_1-2.jpg" alt="SNS広告 2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Goods -->
+  <div class="modal" id="modal-goods" aria-hidden="true" role="dialog" aria-label="イベントグッズデザインの詳細">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="閉じる">×</button>
+      <div class="modal-body">
+        <h3 class="modal-title">イベントグッズデザイン</h3>
+        <p class="modal-sub">制作概要：アイドルイベントなどのグッズデザイン</p>
+          <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
+        <div class="modal-images modal-images-goods">
+          <figure class="modal-figure goods-main">
+            <img src="assets/works/goods/goods_poster1.jpg" alt="イベントグッズデザイン 1">
+            <figcaption>Poster</figcaption>
+          </figure>
+          <div class="modal-images-row">
+            <figure class="modal-figure goods-sub">
+              <img src="assets/works/goods/goods_batti_1.jpg" alt="イベントグッズデザイン 2">
+              <figcaption>Can badge</figcaption>
+            </figure>
+            <figure class="modal-figure goods-sub">
+              <img src="assets/works/goods/goods_seal1.jpg" alt="イベントグッズデザイン 3">
+              <figcaption>seal</figcaption>
+            </figure>
+          </div>
+          <figure class="modal-figure goods-sub goods-airholder">
+            <img src="assets/works/goods/goods_airholder1.png" alt="イベントグッズデザイン 4">
+            <figcaption>Air holder</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: HP -->
+  <div class="modal" id="modal-hp" aria-hidden="true" role="dialog" aria-label="HP用広告画像の詳細">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="閉じる">×</button>
+      <div class="modal-body">
+        <h3 class="modal-title">HP用広告画像</h3>
+        <p class="modal-sub">制作概要：HPに掲載するメイン画像のデザイン</p>
+        <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
+        <div class="modal-images modal-images-web">
+          <img src="assets/works/web/header_1.jpg" alt="HP用広告画像 1">
+          <img src="assets/works/web/hp_1.jpg" alt="HP用広告画像 2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Movie -->
+  <div class="modal" id="modal-movie" aria-hidden="true" role="dialog" aria-label="動画制作の詳細">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="閉じる">×</button>
+      <div class="modal-body">
+        <h3 class="modal-title">動画制作</h3>
+        <p class="modal-sub">制作概要：プロモーション動画制作</p>
+        <p class="modal-tools">使用ツール：Adobe Premiere Pro, Adobe After Effects, ComfyUI</p>
+        <div class="modal-images modal-images-video">
+          <video class="modal-video" controls preload="metadata" muted playsinline>
+            <source src="assets/works/movie/movie1.mp4" type="video/mp4">
+            お使いのブラウザは動画に対応していません。
+          </video>
+          <video class="modal-video" controls preload="metadata" muted playsinline>
+            <source src="assets/works/movie/movie4.mp4" type="video/mp4">
+            お使いのブラウザは動画に対応していません。
+          </video>
+          <div class="modal-video-embed">
+            <iframe src="https://www.youtube.com/embed/WlOXJN53yyY"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Web -->
+  <div class="modal" id="modal-web" aria-hidden="true" role="dialog" aria-label="Webデザイン・制作の詳細">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="閉じる">×</button>
+      <div class="modal-body">
+        <h3 class="modal-title">Webデザイン・制作</h3>
+        <p class="modal-sub">制作概要：会社HPの実装</p>
+        <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop、Cursor</p>
+        <div class="modal-images modal-images-webdetail">
+          <img src="assets/works/web/Web1-1.jpg" alt="Webデザイン 1">
+          <img src="assets/works/web/Web1-2.jpg" alt="Webデザイン 2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" aria-hidden="true"></div>
+
+  <footer id="contact" class="site-footer">
+    <div class="footer-inner">
+      <p>Contact</p>
+    </div>
+  </footer>
+  <script>
+    (() => {
+      const toggle = document.querySelector('.menu-toggle');
+      const drawer = document.querySelector('.drawer');
+      const drawerBackdrop = document.querySelector('.drawer-backdrop');
+      const closeBtn = document.querySelector('.drawer-close');
+      const body = document.body;
+      const links = drawer?.querySelectorAll('a') || [];
+
+      const openDrawer = () => {
+        drawer.classList.add('open');
+        drawerBackdrop.classList.add('open');
+        body.classList.add('drawer-open');
+      };
+      const closeDrawer = () => {
+        drawer.classList.remove('open');
+        drawerBackdrop.classList.remove('open');
+        body.classList.remove('drawer-open');
+      };
+
+      toggle?.addEventListener('click', () => {
+        if (drawer.classList.contains('open')) closeDrawer();
+        else openDrawer();
+      });
+      closeBtn?.addEventListener('click', closeDrawer);
+      drawerBackdrop?.addEventListener('click', closeDrawer);
+      links.forEach(l => l.addEventListener('click', closeDrawer));
+
+      // KV: autoWidth + center の簡易スライダー（横移動・ループ）
+      const kvList = document.querySelector('.kv-list');
+      if (kvList) {
+        const slides = Array.from(kvList.children);
+        const dots = document.querySelector('.kv-dots');
+        const imgs = kvList.querySelectorAll('img');
+        const waitImages = Array.from(imgs).map((img) => {
+          return img.complete
+            ? Promise.resolve()
+            : new Promise((resolve) => {
+                img.addEventListener('load', resolve, { once: true });
+                img.addEventListener('error', resolve, { once: true });
+              });
+        });
+
+        Promise.all(waitImages).then(() => {
+          let index = 0;
+          let isAnimating = false;
+
+          const setActive = (target) => {
+            kvList.querySelectorAll('.kv-slide').forEach((el) => el.classList.remove('is-active'));
+            target.classList.add('is-active');
+            if (dots) {
+              dots.querySelectorAll('button').forEach((btn, i) => {
+                btn.classList.toggle('is-active', i === index);
+              });
+            }
+          };
+
+          const centerSlide = (idx, withTransition = true) => {
+            const slide = kvList.children[idx];
+            if (!slide) return;
+            const track = kvList.parentElement;
+            const trackWidth = track.getBoundingClientRect().width;
+            const slideRect = slide.getBoundingClientRect();
+            const listRect = kvList.getBoundingClientRect();
+            const slideCenter = slideRect.left - listRect.left + slideRect.width / 2;
+            const offset = slideCenter - trackWidth / 2;
+            kvList.style.transition = withTransition ? 'transform 0.6s ease' : 'none';
+            kvList.style.transform = `translateX(${-offset}px)`;
+            setActive(slide);
+          };
+
+          // 初期位置
+          centerSlide(index, false);
+
+          // ドット生成
+          if (dots) {
+            dots.innerHTML = '';
+            slides.forEach((_, i) => {
+              const btn = document.createElement('button');
+              btn.type = 'button';
+              btn.setAttribute('aria-label', `KV ${i + 1}`);
+              btn.addEventListener('click', () => {
+                if (isAnimating) return;
+                index = i;
+                centerSlide(index, true);
+              });
+              dots.appendChild(btn);
+            });
+            setActive(slides[index]);
+          }
+
+          const next = () => {
+            if (isAnimating) return;
+            isAnimating = true;
+            index = (index + 1) % slides.length;
+            centerSlide(index, true);
+            setTimeout(() => { isAnimating = false; }, 650);
+          };
+
+          setInterval(next, 4000);
+          window.addEventListener('resize', () => centerSlide(index, false));
+        });
+      }
+
+      // Modal (汎用)
+      const bodyLock = () => document.body.classList.add('modal-open');
+      const bodyUnlock = () => document.body.classList.remove('modal-open');
+      const modalBackdrop = document.querySelector('.modal-backdrop');
+      const modalTriggers = document.querySelectorAll('[data-modal-target]');
+
+      const openModal = (id) => {
+        const modal = document.getElementById(`modal-${id}`);
+        if (!modal) return;
+        modal.classList.add('open');
+        modalBackdrop?.classList.add('open');
+        bodyLock();
+      };
+
+      const closeModal = (modal) => {
+        modal?.classList.remove('open');
+        modalBackdrop?.classList.remove('open');
+        bodyUnlock();
+      };
+
+      modalTriggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          const id = trigger.getAttribute('data-modal-target');
+          openModal(id);
+        });
+      });
+
+      document.querySelectorAll('.modal-close').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const modal = btn.closest('.modal');
+          closeModal(modal);
+        });
+      });
+
+      modalBackdrop?.addEventListener('click', () => {
+        document.querySelectorAll('.modal.open').forEach((m) => m.classList.remove('open'));
+        modalBackdrop.classList.remove('open');
+        bodyUnlock();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          const openModalEl = document.querySelector('.modal.open');
+          if (openModalEl) closeModal(openModalEl);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
