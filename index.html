@@ -13,7 +13,7 @@
   <body>
   <header class="site-header">
     <div class="header-inner">
-      <div class="brand">K,YAMANAKA Portfolio</div>
+      <h1 class="brand">K,YAMANAKA Portfolio</h1>
       <button class="menu-toggle" aria-label="メニューを開く">
         <span></span><span></span><span></span>
       </button>
@@ -27,7 +27,7 @@
 
   <div class="drawer" aria-hidden="true">
     <div class="drawer-header">
-      <div class="brand">K,YAMANAKA Portfolio</div>
+      <h1 class="brand">K,YAMANAKA Portfolio</h1>
       <button class="drawer-close" aria-label="メニューを閉じる">×</button>
     </div>
     <div class="drawer-links">
@@ -141,7 +141,7 @@
     <div class="modal-content">
       <button class="modal-close" aria-label="閉じる">×</button>
       <div class="modal-body">
-        <h3 class="modal-title">駅看板デザイン</h3>
+        <p class="modal-title">駅看板デザイン</p>
         <p class="modal-sub">制作概要：都内駅構内に掲載する大型看板デザイン</p>
         <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
         <div class="modal-images modal-images-station">
@@ -165,7 +165,7 @@
     <div class="modal-content">
       <button class="modal-close" aria-label="閉じる">×</button>
       <div class="modal-body">
-        <h3 class="modal-title">雑誌広告デザイン</h3>
+        <p class="modal-title">雑誌広告デザイン</p>
         <p class="modal-sub">制作概要：雑誌に掲載の広告ページのデザイン</p>
         <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
         <div class="modal-images modal-images-magazine">
@@ -180,7 +180,7 @@
     <div class="modal-content">
       <button class="modal-close" aria-label="閉じる">×</button>
       <div class="modal-body">
-        <h3 class="modal-title">デジタルカードデザイン</h3>
+        <p class="modal-title">デジタルカードデザイン</p>
         <p class="modal-sub">制作概要：仮想通貨用のデジタルカード</p>
         <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
         <div class="modal-images modal-images-digital">
@@ -196,7 +196,7 @@
     <div class="modal-content">
       <button class="modal-close" aria-label="閉じる">×</button>
       <div class="modal-body">
-        <h3 class="modal-title">イベントポスターデザイン</h3>
+        <p class="modal-title">イベントポスターデザイン</p>
         <p class="modal-sub">制作概要：Youtuberや飲食店のイベント用ポスターのデザイン</p>
         <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
         <div class="modal-images modal-images-poster">
@@ -212,7 +212,7 @@
     <div class="modal-content">
       <button class="modal-close" aria-label="閉じる">×</button>
       <div class="modal-body">
-        <h3 class="modal-title">SNS広告</h3>
+        <p class="modal-title">SNS広告</p>
         <p class="modal-sub">制作概要：Instagram、XなどのSNS用の広告デザイン</p>
         <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
         <div class="modal-images modal-images-sns">
@@ -228,7 +228,7 @@
     <div class="modal-content">
       <button class="modal-close" aria-label="閉じる">×</button>
       <div class="modal-body">
-        <h3 class="modal-title">イベントグッズデザイン</h3>
+        <p class="modal-title">イベントグッズデザイン</p>
         <p class="modal-sub">制作概要：アイドルイベントなどのグッズデザイン</p>
           <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
         <div class="modal-images modal-images-goods">
@@ -260,7 +260,7 @@
     <div class="modal-content">
       <button class="modal-close" aria-label="閉じる">×</button>
       <div class="modal-body">
-        <h3 class="modal-title">HP用広告画像</h3>
+        <p class="modal-title">HP用広告画像</p>
         <p class="modal-sub">制作概要：HPに掲載するメイン画像のデザイン</p>
         <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop</p>
         <div class="modal-images modal-images-web">
@@ -276,7 +276,7 @@
     <div class="modal-content">
       <button class="modal-close" aria-label="閉じる">×</button>
       <div class="modal-body">
-        <h3 class="modal-title">動画制作</h3>
+        <p class="modal-title">動画制作</p>
         <p class="modal-sub">制作概要：プロモーション動画制作</p>
         <p class="modal-tools">使用ツール：Adobe Premiere Pro, Adobe After Effects, ComfyUI</p>
         <div class="modal-images modal-images-video">
@@ -304,7 +304,7 @@
     <div class="modal-content">
       <button class="modal-close" aria-label="閉じる">×</button>
       <div class="modal-body">
-        <h3 class="modal-title">Webデザイン・制作</h3>
+        <p class="modal-title">Webデザイン・制作</p>
         <p class="modal-sub">制作概要：会社HPの実装</p>
         <p class="modal-tools">使用ツール：Adobe Illustrator、Adobe Photoshop、Cursor</p>
         <div class="modal-images modal-images-webdetail">
@@ -436,12 +436,14 @@
         const modal = document.getElementById(`modal-${id}`);
         if (!modal) return;
         modal.classList.add('open');
+        modal.setAttribute('aria-hidden', false);
         modalBackdrop?.classList.add('open');
         bodyLock();
       };
 
       const closeModal = (modal) => {
         modal?.classList.remove('open');
+        modal?.setAttribute('aria-hidden', true);
         modalBackdrop?.classList.remove('open');
         bodyUnlock();
       };
@@ -461,7 +463,10 @@
       });
 
       modalBackdrop?.addEventListener('click', () => {
-        document.querySelectorAll('.modal.open').forEach((m) => m.classList.remove('open'));
+        document.querySelectorAll('.modal.open').forEach((m) => {
+          m.classList.remove('open');
+          m.setAttribute('aria-hidden', true);
+        });
         modalBackdrop.classList.remove('open');
         bodyUnlock();
       });
