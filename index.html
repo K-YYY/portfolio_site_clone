@@ -436,14 +436,12 @@
         const modal = document.getElementById(`modal-${id}`);
         if (!modal) return;
         modal.classList.add('open');
-        modal.setAttribute('aria-hidden', false);
         modalBackdrop?.classList.add('open');
         bodyLock();
       };
 
       const closeModal = (modal) => {
         modal?.classList.remove('open');
-        modal?.setAttribute('aria-hidden', true);
         modalBackdrop?.classList.remove('open');
         bodyUnlock();
       };
@@ -463,10 +461,7 @@
       });
 
       modalBackdrop?.addEventListener('click', () => {
-        document.querySelectorAll('.modal.open').forEach((m) => {
-          m.classList.remove('open');
-          m.setAttribute('aria-hidden', true);
-        });
+        document.querySelectorAll('.modal.open').forEach((m) => m.classList.remove('open'));
         modalBackdrop.classList.remove('open');
         bodyUnlock();
       });
