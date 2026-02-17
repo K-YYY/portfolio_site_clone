@@ -333,12 +333,16 @@
 
       const openDrawer = () => {
         drawer.classList.add('open');
+        drawer.setAttribute('aria-hidden', false);
         drawerBackdrop.classList.add('open');
+        drawerBackdrop.setAttribute('aria-hidden', false);
         body.classList.add('drawer-open');
       };
       const closeDrawer = () => {
         drawer.classList.remove('open');
+        drawer.setAttribute('aria-hidden', true);
         drawerBackdrop.classList.remove('open');
+        drawerBackdrop.setAttribute('aria-hidden', true);
         body.classList.remove('drawer-open');
       };
 
