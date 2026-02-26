@@ -454,6 +454,7 @@ body.modal-open {
   max-width: 400px;
   aspect-ratio: 400 / 250;
   height: auto;
+  padding: 0;
   background: #ffffff;
   border: 1px solid #c8c8c8;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
@@ -466,10 +467,6 @@ body.modal-open {
   height: 100%;
   object-fit: contain;
   display: block;
-}
-
-.thumb-single {
-  padding: 0;
 }
 
 .work-card:hover .thumb {
@@ -495,7 +492,6 @@ body.modal-open {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
 }
 
 .about-content {
@@ -520,19 +516,14 @@ body.modal-open {
   width: 360px;
   height: 360px;
   margin-left: auto;
+  margin-bottom: 12px;
 }
 
 .circle-front {
   width: 360px;
-  height: 360px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
-  background: #bdbbbb;
-  top: 0;
-  left: 0;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 .circle-front img {
@@ -583,7 +574,7 @@ body.modal-open {
 
   
 /* アバウトセクション */
-.about {
+  .about {
     padding: 48px 20px 64px;
     min-height: auto;
     gap: 24px;
@@ -597,6 +588,8 @@ body.modal-open {
   }
 
   .about-visual {
+    width: auto;
+    height: auto;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -685,16 +678,17 @@ body.modal-open {
   }
 
   .about-visual {
+    width: auto;
+    height: auto;
     margin: 12px auto 0;
     display: flex;
     justify-content: center;
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: 12px;
   }
 
   .circle-front {
     width: 220px;
-    height: 220px;
   }
 
   .footer-inner {
