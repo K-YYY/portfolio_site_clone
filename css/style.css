@@ -43,8 +43,12 @@ a {
 
 .nav {
   display: flex;
-  gap: 32px;
   font-size: 16px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 32px;
 }
 
 .menu-toggle {
@@ -104,10 +108,13 @@ a {
 }
 
 .drawer-links {
+  font-size: 18px;
+}
+
+.drawer-links ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  font-size: 18px;
 }
 
 .drawer-backdrop {
