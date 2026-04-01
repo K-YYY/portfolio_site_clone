@@ -439,7 +439,7 @@ body.modal-open {
 /* ワークスセクション */
 .works {
   background: #efeded;
-  padding: 0 32px 56px;
+  padding: 48px 32px 56px;
 }
 
 .section-title {
@@ -608,8 +608,8 @@ body.modal-open {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   color: #ffffff;
   transition: opacity 0.2s ease;
 }
@@ -618,9 +618,19 @@ body.modal-open {
   opacity: 0.75;
 }
 
+.footer-social-link img,
 .footer-social-link svg {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+}
+
+.footer-social-instagram {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-social-link svg {
   fill: currentColor;
 }
 
